@@ -42,7 +42,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Project Icarus</a>
+                <img class="pull-left img-responsive"
+                     src="img/logo.png" width="50" height="50">
+                    <a class="navbar-brand" href="index.html" id="logo">Project Icarus</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -55,6 +57,55 @@
                     </li>
                     <li>
                         <a href="faq.html">FAQ</a>
+                    </li>
+
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search projects...">
+                        </div>
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                    </form>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Log In <span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-lr animated slideInRight" role="menu">
+                            <div class="col-lg-12">
+                                <div class="text-center"><h3><b>Log In</b></h3></div>
+                                <form id="ajax-login-form" action="" method="post" role="form" autocomplete="off">
+                                    <div class="form-group">
+                                        <label for="username">Username</label>
+                                        <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="off">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" autocomplete="off">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-xs-7">
+                                                <input type="checkbox" tabindex="3" name="remember" id="remember">
+                                                <label for="remember"> Remember Me</label>
+                                            </div>
+                                            <div class="col-xs-5 pull-right">
+                                                <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success" value="Log In">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="text-center">
+                                                    <a href="#" tabindex="5" class="forgot-password">Forgot Password?</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" class="hide" name="token" id="token" value="a465a2791ae0bae853cf4bf485dbe1b6">
+                                </form>
+                            </div>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -75,19 +126,19 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill img-responsive center-block" style="background-image:url(img/robot.jpg);"></div>
+            <div class="fill" style="background-image:url(img/robot.jpg);"></div>
                 <div class="carousel-caption">
                     <h2 id="robot">Mercury Project</h2>
                 </div>
             </div>
             <div class="item">
-                <div class="fill img-responsive center-block" style="background-image:url(img/present.jpg);"></div>
+                <div class="fill" style="background-image:url(img/present.jpg);"></div>
                 <div class="carousel-caption">
                     <h2 id="present">Teachers 4 Students</h2>
                 </div>
             </div>
             <div class="item">
-                <div class="fill img-responsive center-block" style="background-image:url(img/moustache.jpg);"></div>
+                <div class="fill" style="background-image:url(img/moustache.jpg);"></div>
                 <div class="carousel-caption">
                     <h2 id="stache">Project 'Stache</h2>
                 </div>
@@ -113,70 +164,37 @@
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="img/grandma-using-a-iphone.png" alt="">
+                    <img class="img-responsive img-portfolio img-hover" style="border: 9px double #009999" src="img/grandma-using-a-iphone.png" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item1.html">
-                    <img class="img-responsive img-portfolio img-hover" src="img/weed_machine.jpg" alt="">
+                    <img class="img-responsive img-portfolio img-hover" style="border: 9px double #009999" src="img/weed_machine.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item2.html">
-                    <img class="img-responsive img-portfolio img-hover" src="img/sink_light.jpg" alt="">
+                    <img class="img-responsive img-portfolio img-hover" style="border: 9px double #009999" src="img/sink_light.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item2.html">
-                    <img class="img-responsive img-portfolio img-hover" src="img/pizza_scissors.jpg" alt="">
+                <a href="portfolio-item3.html">
+                    <img class="img-responsive img-portfolio img-hover" style="border: 9px double #009999" src="img/pizza_scissors.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item1.html">
-                    <img class="img-responsive img-portfolio img-hover" src="img/tom.jpg" alt="">
+                <a href="portfolio-item4.html">
+                    <img class="img-responsive img-portfolio img-hover" style="border: 9px double #009999" src="img/tom.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item1.html">
-                    <img class="img-responsive img-portfolio img-hover" src="img/final.jpg" alt="">
+                <a href="portfolio-item5.html">
+                    <img class="img-responsive img-portfolio img-hover" style="border: 9px double #009999" src="img/final.jpg" alt="">
                 </a>
             </div>
         </div>
         <!-- /.row -->
 
-        <!-- Features Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Example Senior Design Project</h2>
-            </div>
-            <div class="col-md-6">
-                <p>Example Senior Design Project Description:</p>
-                <ul>
-
-                    </li>
-                    <li>Required Platforms</li>
-                    <li>Development Time</li>
-                    <li>Client Name or Organization</li>
-                    <li>Client Contact Information</li>
-
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <img class="img-responsive" src="img/business-idea.jpg" alt="">
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Greg Sandoval 2014</p>
-                </div>
-            </div>
-        </footer>
 
     </div>
     <!-- /.container -->
